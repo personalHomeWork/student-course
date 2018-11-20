@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.studentcourse.test.StudentCourseServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.357 s <<< FAILURE! - in com.studentcourse.test.StudentCourseServiceTest
+initializationError(com.studentcourse.test.StudentCourseServiceTest)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.IllegalStateException: Could not load CacheAwareContextLoaderDelegate [class org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]: Unresolvable class definition; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/KotlinDetector
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/KotlinDetector
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.KotlinDetector
+
